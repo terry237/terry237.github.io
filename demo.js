@@ -8,15 +8,24 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.my_first_block = function() {
+    ext.test_block = function() {
         // Code that gets executed when the block is run
+    };
+	
+	ext.wait_random = function(callback) {
+        wait = Math.random();
+        console.log('Waiting for ' + wait + ' seconds');
+        window.setTimeout(function() {
+            callback();
+        }, wait*1000);
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            [' ', 'my first block', 'my_first_block'],
+            [' ', 'my test block', 'test_block'],
+			['w', 'wait for random time', 'wait_random'],
         ]
     };
 
