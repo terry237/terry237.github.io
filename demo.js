@@ -64,7 +64,7 @@
 			['w', 'wait for random time', 'wait_random'],//等待
 			['r', 'power %n ^ %n', 'power', 2, 3],//输出
 			['R', 'current temperature in city %s', 'get_tmp', 'Boston, MA'],//等待输出，R大写
-			['', 'run alarm after %n seconds', 'set_alarm', '2'],
+			[' ', 'run alarm after %n seconds', 'set_alarm', '2'],
             ['h', 'when alarm goes off', 'when_alarm'],//hat block 条件触发
         ]
     };
