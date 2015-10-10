@@ -745,6 +745,6 @@ new (function () {
 
 
     // Register the extension
-    ScratchExtensions.register('Xi4S_v_004_12Feb15', descriptor, ext);
+    ScratchExtensions.register('wis_robot', descriptor, ext);
 
 })();
