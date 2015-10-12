@@ -118,7 +118,6 @@ new (function () {
             }
         }
         // This is a confirmed unique entry. Create a websocket for this board
-		alert('ws://' + ipAddress + ':' + port);//***//
         var socket = new WebSocket('ws://' + ipAddress + ':' + port);
 
         // add the entry including the websocket reference just created
@@ -130,7 +129,6 @@ new (function () {
 
         // attach an onopen handler to this socket. This message is sent by a servers websocket
         socket.onopen = function (event) {
-		alert('come in');
             window.clearTimeout(timeoutID);
             if (debugLevel >= 1)
                 console.log('onopen message received');
