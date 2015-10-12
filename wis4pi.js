@@ -704,7 +704,7 @@ new (function () {
             inversion: ['1. False', '2. True'],
             distance: ['1. CM', '2. Inches']
 
-        },
+        }
     };
 
 
