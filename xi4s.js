@@ -702,7 +702,7 @@ new (function () {
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['w', 'Board %m.bdNum IPAddress/Port: %s : %s', 'setBoard', '1', 'localhost', '1234'],
+            ['w', 'Board %m.bdNum IPAddress/Port: %s : %s', 'setBoard', '1', '192.168.1.111', '8888'],
             [' ', 'Board: %m.bdNum Set Pin %n as %m.pinMode', 'pinMode', '1', '2', '1. Digital Input'],
             [' ', 'Board: %m.bdNum Digital Write Pin %n = %m.onOff ', 'digitalWrite', '1', '2', '1. Off'],
             [' ', 'Board: %m.bdNum Analog Write(PWM) Pin %n = %n', 'analogWrite', '1', '3', '128'],
