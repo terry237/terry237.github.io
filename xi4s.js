@@ -130,6 +130,7 @@ new (function () {
 
         // attach an onopen handler to this socket. This message is sent by a servers websocket
         socket.onopen = function (event) {
+		alert('come in');
             window.clearTimeout(timeoutID);
             if (debugLevel >= 1)
                 console.log('onopen message received');
